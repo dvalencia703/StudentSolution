@@ -1,0 +1,11 @@
+StudentSolution
+|
+ --- src (source code)
+|
+ --- dist (distribution)
+|
+ --- lib (libraries)
+|
+ --- files (students file)
+|
+ --- config.properties (properties of the system)

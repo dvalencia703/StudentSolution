@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project StudentSolution with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="D:/Development/Truextend/JavaProjects/Workspace/StudentSolution/dist/studentSolution.jar">
+            <manifest>
+                <attribute name="Main-Class" value="com.truextend.exercise.runner.StudentSolution"/>
+                <attribute name="Class-Path" value=". lib/gson-2.2.2.jar"/>
+            </manifest>
+            <fileset dir="D:/Development/Truextend/JavaProjects/Workspace/StudentSolution/bin"/>
+        </jar>
+        <delete dir="D:/Development/Truextend/JavaProjects/Workspace/StudentSolution/dist/lib"/>
+        <mkdir dir="D:/Development/Truextend/JavaProjects/Workspace/StudentSolution/dist/lib"/>
+        <copy file="D:/Development/Truextend/JavaProjects/Workspace/StudentSolution/libs/gson-2.2.2.jar" todir="D:/Development/Truextend/JavaProjects/Workspace/StudentSolution/dist/lib"/>
+    </target>
+</project>
