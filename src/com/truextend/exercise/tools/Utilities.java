@@ -164,21 +164,13 @@ public final class Utilities {
 				Student studentStored = result.get(i);
 				if (orderByName) {
 					if (student.getName().compareToIgnoreCase(studentStored.getName()) < 0) {
-<<<<<<< HEAD
 						result.add(i, student);
-=======
-						result.add(0, student);
->>>>>>> 405b1fd2ec7e9c1beedcfdc8627bb849fa4b17fa
 						finish = true;
 					}
 					
 				} else {
 					if (student.getTimestamp() > studentStored.getTimestamp()) {
-<<<<<<< HEAD
 						result.add(i, student);
-=======
-						result.add(0, student);
->>>>>>> 405b1fd2ec7e9c1beedcfdc8627bb849fa4b17fa
 						finish = true;
 					}
 					
